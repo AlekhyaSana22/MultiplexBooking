@@ -33,7 +33,7 @@ public class MovieController {
 	@PostMapping(value= "/movie")
 	public ResponseEntity<String> addMovie(@RequestBody MovieDTO movie){
 		Integer movieId=movieServices.addMovie(movie);
-		return new ResponseEntity<String>("API.INSERT_CREATED", HttpStatus.CREATED);
+		return new ResponseEntity<String>("Movie Inserted", HttpStatus.CREATED);
 	}
 	
 	@GetMapping(value="/movie/{movieId}")

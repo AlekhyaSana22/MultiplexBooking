@@ -15,8 +15,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.multiplex.entities.User;
 import com.multiplex.repository.UserRepository;
 
- 
-
 @SpringBootTest
 class MultiplexProjectApplicationTests {
 
@@ -29,7 +27,7 @@ class MultiplexProjectApplicationTests {
 
         @Test
         public void addUser(){
-            User user=new User(2, "Shubham", "7898456786", "shubh.am@gmail.com", "Password");
+            User user=new User(2, "Alekhya", "7891018537", "xyz@gmail.com", "Password");
             userRespository.save(user);
             assertNotNull(userRespository.findById(2).get());
         }

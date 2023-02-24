@@ -1,6 +1,7 @@
 package com.multiplex.services;
 
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -37,7 +38,6 @@ public class MovieServicesImpl implements MovieServices{
 	}
 	@Override
 	public Integer addMovie(MovieDTO movie) {
-		// TODO Auto-generated method stub
 		Movie movieEntity=new Movie();
 		movieEntity.setMovieId(movie.getMovieId());
 		movieEntity.setMovieName(movie.getMovieName());

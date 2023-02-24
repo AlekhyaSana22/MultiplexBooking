@@ -18,7 +18,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Movie {
 	@Id
 	@Column(name="movieid")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 private Integer movieId;
 private String movieName;
 @DateTimeFormat
@@ -27,7 +27,6 @@ private LocalDate date;
 private LocalTime time;
 public Movie() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 public Movie(Integer movieId, String movieName, LocalDate date, LocalTime time) {
 	super();

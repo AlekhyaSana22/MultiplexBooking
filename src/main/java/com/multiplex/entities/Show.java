@@ -27,7 +27,6 @@ private Integer showId;
 private Hall hall;
 	public Show() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Show(Integer showId, Hall hall) {
 		super();

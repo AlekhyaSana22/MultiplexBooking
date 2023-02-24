@@ -38,7 +38,7 @@ public class UserController {
 @PostMapping(value="/usertable")
 	public ResponseEntity<String> addUser(@RequestBody UserDTO user) throws UserAlreadyExistsException{
 		User userId=userServices.addUser(user);
-		return new ResponseEntity<String>("API.INSERT_CREATED", HttpStatus.CREATED);
+		return new ResponseEntity<String>("Login Successfull", HttpStatus.CREATED);
 	}
 
 @GetMapping(value="/usertable/{userId}")

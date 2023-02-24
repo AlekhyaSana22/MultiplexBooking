@@ -22,7 +22,6 @@ public class HallServicesImpl implements HallServices{
 	private MovieRepository movieRespository;
 	@Override
 	public List<HallDTO> getAllHalls() throws HallNotFoundExcepiton{
-		// TODO Auto-generated method stub
 		Iterable<Hall> halls=hallRepository.findAll();
 		List<HallDTO> halls2=new ArrayList<>();
 		halls.forEach(hall -> {
@@ -39,7 +38,7 @@ public class HallServicesImpl implements HallServices{
 	}
 	@Override
 	public Integer addHall(HallDTO hall) {
-		// TODO Auto-generated method stub
+
 		Hall hallEntity=new Hall();
 		hallEntity.setHallId(hall.getHallId());
 		hallEntity.setMovie(hall.getMovie());
@@ -50,7 +49,7 @@ public class HallServicesImpl implements HallServices{
 	}
 	@Override
 	public HallDTO gethallById(Integer hallId) throws HallNotFoundExcepiton{
-		// TODO Auto-generated method stub
+
 		Optional<Hall> optional=hallRepository.findById(hallId);
 		Hall hall=optional.orElseThrow(() -> new HallNotFoundExcepiton());
 		HallDTO hall2=new HallDTO();

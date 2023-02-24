@@ -22,7 +22,6 @@ private String emailId;
 private String password;
 public User() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 public User(Integer userId, String userName, String phoneNumber, String emailId, String password) {
 	super();
